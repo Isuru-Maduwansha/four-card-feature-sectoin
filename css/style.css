@@ -136,4 +136,35 @@ p {
   color: hsl(228, 45%, 44%);
 }
 
+/*--media query--*/
+@media (max-width: 75em) {
+  .container {
+    width: 50%;
+    margin: 3em auto 0;
+  }
+  .container-grid {
+    width: 90%;
+  }
+}
+@media (max-width: 50em) {
+  .container {
+    width: 75%;
+    margin: 3em auto 0;
+  }
+  .container-grid {
+    width: 100%;
+  }
+}
+@media (max-width: 35em) {
+  .container {
+    width: 95%;
+    margin: 3em auto 0;
+  }
+  .container-grid {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
