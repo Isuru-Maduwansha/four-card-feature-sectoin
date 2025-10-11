@@ -85,6 +85,10 @@ p{
    margin: 1.25em;
    padding: 2em 2.5em 3em;
 }
+.card:hover{
+   transform: translateY(-5px);
+
+}
 .supervisor{
    grid-area: 2 / 1 / 4 / 2;
    border-top: 0.25em solid var(--c-Primary-Cyan);
