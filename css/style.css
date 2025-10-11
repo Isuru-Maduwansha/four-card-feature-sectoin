@@ -145,7 +145,7 @@ p {
     display: grid;
     margin: 2em auto 5em;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 2;
+    grid-template-rows: repeat(2, auto);
   }
   .supervisor {
     grid-area: 1/1/2/2;
