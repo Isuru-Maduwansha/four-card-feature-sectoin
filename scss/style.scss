@@ -1,0 +1,124 @@
+/*--color & font family--*/
+:root{
+   --font-base: "Poppins";
+
+   --c-Primary-Red: hsl(0, 78%, 62%);
+   --c-Primary-Cyan: hsl(180, 62%, 55%);
+   --c-Primary-Orange: hsl(34, 97%, 64%);
+   --c-Primary-Blue: hsl(212, 86%, 64%);
+
+   --c-Secondary-Grey500: hsl(234, 12%, 34%);
+   --c-Secondary-Grey400: hsl(212, 6%, 44%);
+   --c-Secondary-White: hsl(0, 0%, 100%);
+}
+
+html{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: var(--font-base);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*--body--*/
+body{
+   font-size: 15px;
+   line-height: 1.5;
+   background-color: var(--c-Secondary-White);
+}
+p{
+   color: var(--c-Secondary-Grey400);
+   font-weight: 400;
+}
+
+/*--header container--*/
+.container{
+   display: flex;
+   flex-direction: column;
+   width: 33.3%;
+   align-items: center;
+   margin: 5em auto 2.5em;
+   text-align: center;
+}
+.container h1{
+   color: var(--c-Secondary-Grey400);
+   font-weight: 200;
+   font-size: 2rem;
+   margin: 0;
+}
+.container h2{
+   color: var(--c-Secondary-Grey500);
+   font-weight: 600;
+   font-size: 2rem;
+   margin: 0;
+}
+.container p{
+   margin: 1em 0;
+}
+
+/*--css grid--*/
+.container-grid{
+   display: grid;
+   width: 72%;
+   margin: 2.5em auto 5em;
+   grid-template-columns: repeat(3 , 33.3%);
+   grid-template-rows: 4;
+}
+.container-grid h3{
+   color: var(--c-Secondary-Grey500);
+   font-weight: 600;
+   font-size: 1.2rem;
+   margin: 0;
+}
+
+/*--grid items--*/
+.supervisor{
+   grid-area: 2 / 1 / 4 / 2;
+   border-top: 0.25em solid var(--c-Primary-Cyan);
+   box-shadow: 0 0.25em 0.8em rgba(68, 0, 255, 0.1);
+   font-size: 0.8rem;
+   border-radius: 0.5em;
+   margin: 1.25em;
+   padding: 2em 2.5em 3em;
+}
+.team-builder{
+   grid-area: 1 / 2 / 3 / 3;
+   border-top: 0.25em solid var(--c-Primary-Red);
+   box-shadow: 0 0.25em 0.8em rgba(68, 0, 255, 0.1);
+   font-size: 0.8rem;
+   border-radius: 0.5em;
+   margin: 1.25em;
+   padding: 2em 2.5em 3em;
+}
+.karma{
+   grid-area: 3 / 2 / 5 / 3;
+   border-top: 0.25em solid var(--c-Primary-Orange);
+   box-shadow: 0 0.25em 0.8em rgba(68, 0, 255, 0.1);
+   font-size: 0.8rem;
+   border-radius: 0.5em;
+   margin: 1.25em;
+   padding: 2em 2.5em 3em;
+}
+.calculator{
+   grid-area: 2 / 3 / 4 / 4;
+   border-top: 0.25em solid var(--c-Primary-Blue);
+   box-shadow: 0 0.25em 0.8em rgba(68, 0, 255, 0.1);
+   font-size: 0.8rem;
+   border-radius: 0.5em;
+   margin: 1.25em;
+   padding: 2em 2.5em 3em;
+}
+.supervisor img, .team-builder img, .karma img, .calculator img{
+   margin-top: 2em;
+   display: block;
+   margin-left: auto;
+}
+
+/*--footer--*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
